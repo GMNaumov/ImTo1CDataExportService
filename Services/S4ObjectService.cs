@@ -34,7 +34,7 @@ namespace ImTo1CDataExportService.Services
             {
                 foreach (S4Object s4Object in s4Objects)
                 {
-                    if (designation.Equals(s4Object.designation))
+                    if (designation.Equals(s4Object.Designation))
                     {
                         return s4Object;
                     }
@@ -50,7 +50,7 @@ namespace ImTo1CDataExportService.Services
             {
                 foreach (S4Object s4Object in s4Objects)
                 {
-                    if (id == s4Object.s4ObjectId)
+                    if (id == s4Object.S4ObjectId)
                     {
                         return s4Object;
                     }

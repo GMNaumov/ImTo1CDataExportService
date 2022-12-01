@@ -1,24 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace ImTo1CDataExportService.Models
+﻿namespace ImTo1CDataExportService.Models
 {
     public class S4Object
     {
         private static int id = 1;
-        public int s4ObjectId { get; set; }
-        public string designation { get; set; }
-        public string name { get; set; }
-        public double weight { get; set; }
+        public int S4ObjectId { get; set; }
+        public string Designation { get; set; }
+        public string Name { get; set; }
+        public double Weight { get; set; }
 
         public S4Object(string designation, string name, double weight)
         {
-            this.s4ObjectId = GetNextId();
-            this.designation = designation;
-            this.name = name;
-            this.weight = weight;
+            this.S4ObjectId = GetNextId();
+            this.Designation = designation;
+            this.Name = name;
+            this.Weight = weight;
         }
 
         public static int GetNextId()
